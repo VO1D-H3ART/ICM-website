@@ -21,8 +21,8 @@ function updateQRCode() {
     qrImg.style.display = "none"; // or show a weekend QR code if you want
   }
 }
-
-function showDateTime() {
+document.addEventListener("DOMContentLoaded", function() {
+  function showDateTime() {
   const now = new Date();
   const options = {
     weekday: 'long', year: 'numeric', month: 'long', day: 'numeric',
@@ -32,5 +32,9 @@ function showDateTime() {
   document.getElementById("datetime").textContent = now.toLocaleString(undefined, options);
 }
 
-updateQRCode();
 showDateTime();
+  
+});
+
+
+updateQRCode();
