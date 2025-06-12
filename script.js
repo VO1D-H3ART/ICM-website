@@ -33,4 +33,4 @@ function showDateTime() {
 }
 
 updateQRCode();
-showDateTime()
+showDateTime();
