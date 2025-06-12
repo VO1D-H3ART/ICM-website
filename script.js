@@ -7,5 +7,5 @@ function updateDateTime() {
 
    // update the `textContent` property of the `span` element with the `id` of `datetime`
    document.querySelector('#datetime').textContent = currentDateTime;
-
 }
+setInterval(updateDateTime, 1000);
