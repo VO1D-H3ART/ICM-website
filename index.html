@@ -1,19 +1,58 @@
+<!-- index.html -->
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daily QR Code</title>
 
-<html>
-    <head>
-        <title> ICM Login</title>
-        
-    </head>
+<style>
+    /* full-viewport flex container, with some padding */
+    body {
+        font-family: sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        margin: 0;
+        min-height: 100vh;
+        box-sizing: border-box;
+        background: #f8f8f8;
+    }
 
-    <body>
-        <script src="script.js"></script>
-        <h1>Welcome to ICM: Login using the QR code</h1>
-        <span id="datetime"></span>
-        <img id="qrcode" src=" " alt="QR Code" >
-        
-    </body>
+  /* responsive date/time: scales between 1rem and 1.5rem based on viewport */
+    #datetime {
+        margin-bottom: 1rem;
+        font-size: clamp(1rem, 2.5vw, 1.5rem);
+        text-align: center;
+        color: #333;
+    }
 
+  /* make the QR code never overflow, and grow/shrink with viewport */
+    #qrcode {
+        /* at most 90% of viewport width, but no larger than 400px */
+        width: min(90vw, 400px);
+        /* maintain aspect ratio */
+        height: auto;
+        /* optional border or shadow for legibility */
+        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+</style>
+
+
+</head>
+
+
+
+
+<body>
+    <h1>Welcome to the ICM Employee Signin </h1>
+    <div id="datetime">Loading date/time…</div>
+    <img id="qrcode" alt="Today's QR Code" src="" />
+  
+    <script src="script.js"></script>
+</body>
 
 
 </html>
