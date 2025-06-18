@@ -12,3 +12,6 @@ https://docs.google.com/document/d/1aW9-VcMWUVEIaIXYr0pXzcTT7oWcbxfZuatiayGMKF4/
 These links are only avabilible to MDI members and emails
 
 
+---June 18th ---
+Uploaded a work in progress of a verion 2.0 of the website. This version has new .html pages for the various types of employees using simple hyper links that the user can tap on the fire tablet
+
