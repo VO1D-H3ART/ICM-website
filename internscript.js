@@ -60,3 +60,11 @@
   updateDisplay();
   setInterval(updateDisplay, 60000);
 })();
+
+// define this function will redirect to the home.html file
+function redirectHome() {
+  window.location.href = 'home.html';
+}
+
+// set a 10-second timer, then fire redirectHome
+setTimeout(redirectHome, 10000);
