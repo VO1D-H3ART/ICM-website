@@ -33,12 +33,43 @@
       box-shadow: 0 2px 8px rgba(0,0,0,0.15);
       display: none;
     }
+
+    button {
+      background-color: #007BFF;      /* nice medium-blue */
+      color: white;                   /* white text for contrast */
+      border: none;                   /* remove default border */
+      padding: 0.6em 1.2em;           /* vertical + horizontal padding */
+      font-size: 1rem;                /* reasonable text size */
+      border-radius: 0.5em;           /* rounded corners */
+      cursor: pointer;                /* pointer on hover */
+      transition: background-color 0.2s ease;
+      margin-bottom: 1rem;
+    }
+
+    button:hover {
+      background-color: #0056b3;      /* darker blue on hover */
+    }
+
+    button:active {
+      background-color: #00408d;      /* even darker when clicking */
+    }
+
+    button:focus {
+      outline: 2px solid #80bdff;     /* focus ring */
+      outline-offset: 2px;
+    }
+
+    a{
+      text-decoration: none;
+      color: white;
+    }
+
   </style>
 </head>
 <body>
   <h1>Welcome to the ICM <u><strong>Permanent Employees</strong></u> Sign-in </h1>
-  <h2><a href="teachers.html">Tap here for Teachers </a></h2>
-  <h2><a href="index.html">Tap here For Interns</a></h2>
+  <button><a href="teachers.html">Teachers </a></button>
+  <button><a href="index.html">Interns</a></button>
   <div id="datetime">Loading date/time…</div>
   <div id="loading">Loading QR code…</div>
   <img id="qrcode" alt="Today's QR Code" />
