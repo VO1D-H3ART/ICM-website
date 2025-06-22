@@ -4,6 +4,14 @@
   const loadingEl  = document.getElementById('loading');
   const qrEl = document.getElementById('qrcode');
 
+  document.getElementById('interns').addEventListener('click', function(){
+    window.location.href = 'index.html'
+  });
+
+  document.getElementById('teachers').addEventListener('click', function(){
+    window.location.href = 'teachers.html'
+  });
+
   // File base names for each day (0=Sunday…6=Saturday)
   const dayFiles = [
     'Sunday', 'Monday', 'Tuesday',

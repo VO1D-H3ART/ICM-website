@@ -1,5 +1,19 @@
 const datetimeEl = document.querySelector('#datetime');
 
+
+document.getElementById('perm').addEventListener('click', function(){
+  window.location.href = 'perm.html'
+});
+
+document.getElementById('teachers').addEventListener('click', function(){
+  window.location.href = 'teachers.html'
+});
+
+  document.getElementById('interns').addEventListener('click', function(){
+    window.location.href = 'index.html'
+  });
+
+
 function updateDateTime() {
   const now = new Date();
   

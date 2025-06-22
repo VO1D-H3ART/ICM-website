@@ -1,8 +1,18 @@
 // script.js
 ;(function() {
+
+  // 'El' means element
   const datetimeEl = document.getElementById('datetime');
   const loadingEl  = document.getElementById('loading');
   const qrEl = document.getElementById('qrcode');
+
+  document.getElementById('interns').addEventListener('click', function(){
+    window.location.href = 'index.html'
+  });
+
+  document.getElementById('perm').addEventListener('click', function(){
+    window.location.href = 'perm.html'
+  });
 
   // File base names for each day (0=Sunday…6=Saturday)
   const dayFiles = [
